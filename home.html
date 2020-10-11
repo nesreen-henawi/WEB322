@@ -1,0 +1,125 @@
+<!-- 
+  /*********************************************************************************
+* WEB322 – Assignment 01
+* I declare that this assignment is my own work in accordance with Seneca Academic Policy. No part of
+* this assignment has been copied manually or electronically from any other source (including web sites)
+* or distributed to other students.
+*
+* Name: Nisrein Hinnawi   Student ID: 130223183    Date: 10/09/2020
+*
+********************************************************************************/
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="home.js"></script>
+    <script src="cities.js"></script>
+    <title>Home</title>
+  </head>
+  <body>
+    
+
+
+    <div id="nav_placeholder">
+      <div class="main_menu_container">
+              <img src="img/logo.png" id="logo_image" alt="Logo" />
+        <button type="submit" ><i class="fa fa-search"></i></button>
+        <input type="text" name="search" placeholder="Search..." >
+  
+        <div class="menu_items_container">
+          <a class="active" href="/">Home</a>
+          <a href="/rooms">Room Listing</a>
+          <a href="/registration">User Registration</a>
+        </div>
+      </div>
+  </div>
+
+<table cellspacing="0" cellpadding="0">
+  <tr>
+    <td style="width: 25%;">
+      <div class="coupon">
+        <div class="container">
+          <h3>Sign up promotion</h3>
+        </div>
+        <img src="img/promo_1.png" alt="Promotion" style="width:60%; margin-left: 15%;">
+        <div class="container" >
+          <h2><b>20% OFF YOUR RESERVATION</b></h2> 
+          <p></p>
+        </div>
+        <div class="container">
+          <p>Use Promo Code: <span class="promo">FIRST321</span></p>
+          <p class="expire">Expires: Dec 01, 2020</p>
+        </div>
+      </div>
+    </td>
+    <td style="width: 45%;">
+      <form class="book_form">
+        <p style="font-size: 20px;font-weight: bold;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Book unique places to stay and things to do.</p>
+      
+        <label>WHERE</label>
+        <br/>
+        <input type="text" list="cities" name="city" id="city" placeholder="Anywhere" style="width: 55%;"/> <br />
+        <datalist id="cities" class="list_of_cities"> </datalist>
+       
+          <label>CHECH-IN</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <label>CHECH-OUT</label>
+      
+      <p>
+        <input type="date" id="check_in" name="check_in" style="width: 25%;"/>
+        <input type="date" id="check_in" name="check_in" style="width: 25%;"/>
+        </p>
+        <label>GUESTS</label> <br/>
+        <select class="guest_no" name="guest_no"style="width: 30%;">
+          <option value="1 Guest" selected> 1 Guest</option>
+          <option value="2 Guest"> 2 Guest</option>
+          <option value="3 Guest"> 3 Guest</option>
+          <option value="4 Guest"> 4 Guest</option>
+          <option value="5 Guest"> 5 Guest</option>
+        </select>
+      <br/>
+        <button type="submit" class="search" >Search</button>
+      
+      </form>
+      
+    </td>
+    <td class="td_info_container">
+      <div class="info_container">
+        <video width="384" height="216" id="home_page_video" autoplay controls loop muted>
+          <source src="video/bnb.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <br/>
+      <br/>
+      <div>
+      <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 15; font-weight: bold;">
+         Welcome to the Airbnb travel community. <br/><br/>
+         Wherever you go, we have a place for you. </p>  
+      </div>
+    </td>
+  </tr>
+</table>
+
+    </div>
+    <footer class="footer_menu">
+      <nav class="footer_nav">
+        <div class="footer_main_menu_container">
+        <div class="footer_menu_items_container">
+            <a href="">Contact Us</a>
+            <a href="">News Room</a>
+            <a href="https://www.facebook.com/airbnbcda/"  target="_blank" >Find Us on Facebook</a>
+        </div>
+      </div>
+      </nav>
+
+      
+    </footer>
+  </body>
+</html>
